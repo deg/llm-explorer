@@ -21,8 +21,7 @@
       "backend/.venv": true,
       "frontend/node_modules": true
     },
-    "python.pythonPath": "${workspaceFolder:Backend}/.venv/bin/python",
-    "python.envFile": "${workspaceFolder:Backend}/.env",
+    "editor.formatOnSave": true,
     "typescript.tsdk": "${workspaceFolder:Frontend}/node_modules/typescript/lib"
   },
   "extensions": {
