@@ -1,0 +1,28 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Poetry files
+poetry.lock
+
+# Testing outputs
+.coverage
+*.cover
+htmlcov/
+
+# Logs
+*.log
+*.out
+*.err
+
+# Environment files
+.env
+
+# Editor work products
+.vscode/
+.idea/

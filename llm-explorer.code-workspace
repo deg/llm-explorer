@@ -1,0 +1,55 @@
+{
+  "folders": [
+    {
+      "name": "Workspace Root",
+      "path": "."
+    },
+    {
+      "name": "Backend",
+      "path": "backend"
+    },
+    {
+      "name": "Frontend",
+      "path": "frontend"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "./backend": true,
+      "./frontend": true,
+      "backend/__pycache__": true,
+      "backend/.venv": true,
+      "frontend/node_modules": true
+    },
+    "python.pythonPath": "${workspaceFolder:Backend}/.venv/bin/python",
+    "python.envFile": "${workspaceFolder:Backend}/.env",
+    "typescript.tsdk": "${workspaceFolder:Frontend}/node_modules/typescript/lib"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run Frontend Dev Server",
+        "type": "npm",
+        "script": "start",
+        "path": "frontend"
+      },
+      {
+        "label": "Run Backend FastAPI Server",
+        "type": "shell",
+        "command": "poetry",
+        "args": ["run", "python", "-m", "app"],
+        "presentation": {
+          "reveal": "always"
+        }
+      }
+    ]
+  }
+}

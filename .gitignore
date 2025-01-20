@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.bak
+*.tmp
+*.swp
+*.swo
+*.~*
+*#
+
+# Editor work products
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+logs/
+*.log
+
+# Miscellaneous
+*.lock
