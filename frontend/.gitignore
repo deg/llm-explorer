@@ -4,21 +4,21 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Node Modules
-node_modules/
+node_modules
+dist
+dist-ssr
+*.local
 
-# Build files
-dist/
-
-# Environment files
-.env
-.env.local
-.env.*.local
-
-# Vite cache
-.vite/
-
-# Editor work products
-.vscode/
-.idea/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
